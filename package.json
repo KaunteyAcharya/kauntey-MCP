@@ -6,10 +6,10 @@
   "homepage": "https://kaunteyacharya.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaunteyAcharya/kauntey-mcp.git"
+    "url": "git+https://github.com/KaunteyAcharya/kauntey-MCP.git"
   },
   "bugs": {
-    "url": "https://github.com/KaunteyAcharya/kauntey-mcp/issues"
+    "url": "https://github.com/KaunteyAcharya/kauntey-MCP/issues"
   },
   "license": "MIT",
   "author": "Kauntey Acharya <kaunteyacharya2000@gmail.com> (https://kaunteyacharya.com/)",
