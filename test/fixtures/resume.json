@@ -1,0 +1,293 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Kauntey Acharya",
+    "label": "AI Automation Engineer | AI Strategist & Consultant | Quantitative Analyst",
+    "positioning": "Designing AI-powered workflows, agents, and automation systems that turn repetitive processes into reliable, scalable solutions.",
+    "image": "https://kaunteyacharya.com/assets/icons/icon-512.png",
+    "email": "kaunteyacharya2000@gmail.com",
+    "url": "https://kaunteyacharya.com/",
+    "summary": "I am an AI Automation Engineer and Analyst at Innodata Inc., and I also work as an AI strategist and consultant. I help identify where AI can create practical leverage, translate business problems into AI solutions, and build working prototypes for real workflows: agentic workflows, RAG systems, research agents, API automations, and human-in-the-loop systems using n8n, Python, LLMs, and local AI. Evaluation is a big part of my work. I test LLM behaviour, retrieval quality, workflow reliability, and automation performance to understand where and why AI systems succeed or fail. I bring the same quantitative toolkit (statistics, time-series modelling, and Bayesian inference) to quantitative analysis and finance. Before industry, I was a pre-doctoral research fellow in theoretical physics at Ahmedabad University. My research focused on compact objects in general relativity, including naked singularities, black-hole mimickers, energy extraction, and high-energy particle collisions, and led to four peer-reviewed papers in journals such as Physical Review D and the European Physical Journal C.",
+    "location": {
+      "city": "Ahmedabad",
+      "region": "Gujarat",
+      "countryCode": "IN"
+    },
+    "timezone": "IST (UTC+5:30)",
+    "availability": {
+      "status": "open",
+      "note": "Open to new opportunities and research collaborations",
+      "interestedIn": ["AI roles", "agent builds", "research collaborations", "consulting projects"]
+    },
+    "contact": {
+      "email": "kaunteyacharya2000@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/kauntey-acharya",
+      "github": "https://github.com/KaunteyAcharya",
+      "website": "https://kaunteyacharya.com/",
+      "bookingUrl": null,
+      "preferred": "email",
+      "note": "Ping me for opportunities related to AI roles, agent builds, research collabs, or just a good paper to discuss."
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "KaunteyAcharya", "url": "https://github.com/KaunteyAcharya" },
+      { "network": "LinkedIn", "username": "kauntey-acharya", "url": "https://www.linkedin.com/in/kauntey-acharya" },
+      { "network": "Medium", "username": "sometimes_rational", "url": "https://medium.com/@sometimes_rational" },
+      { "network": "WordPress", "username": "kaunteyacharya", "url": "https://kaunteyacharya.wordpress.com/" },
+      { "network": "ResearchGate", "username": "Kauntey-Acharya", "url": "https://www.researchgate.net/profile/Kauntey-Acharya" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Innodata Inc.",
+      "position": "AI Automation Engineer & Analyst",
+      "startDate": "2024-08",
+      "summary": "Designing and building AI automations and workflows, alongside LLM evaluation, response-quality analysis, role-specific behaviour testing, and multimodal AI workflows.",
+      "highlights": [
+        "AI automations and workflows",
+        "LLM evaluation and response-quality analysis",
+        "Role-specific behaviour testing",
+        "Multimodal AI workflows"
+      ]
+    },
+    {
+      "name": "NetBotPro Technologies",
+      "position": "Research Analyst and Writer",
+      "startDate": "2024-04",
+      "endDate": "2024-08",
+      "summary": "Research-driven technical scripts, academic content review, SEO-aware writing, tracking recent research, and prompt engineering.",
+      "highlights": [
+        "Research-driven technical scripts",
+        "Academic content review",
+        "SEO-aware writing",
+        "Prompt engineering"
+      ]
+    },
+    {
+      "name": "Ahmedabad University",
+      "position": "Pre-Doctoral Research Fellow",
+      "startDate": "2022-05",
+      "endDate": "2024-03",
+      "summary": "Theoretical and numerical research on electromagnetic fields and particle dynamics in curved spacetime, with Prof. Pankaj S. Joshi and collaborators.",
+      "highlights": [
+        "Compact objects in general relativity: naked singularities, black-hole mimickers, energy extraction, high-energy particle collisions",
+        "Four peer-reviewed papers (Phys. Rev. D, Eur. Phys. J. C, Phys. Dark Univ., Universe)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI & agents",
+      "keywords": ["LLMs", "Agentic workflows", "RAG", "Prompt engineering", "LLM evaluation", "Human-in-the-loop design"]
+    },
+    {
+      "name": "Automation & engineering",
+      "keywords": ["n8n", "Zapier", "API integration", "FastAPI", "Docker", "Git", "CI/CD (GitHub Actions)"]
+    },
+    {
+      "name": "Languages & data",
+      "keywords": ["Python", "SQL", "NumPy", "Pandas", "PyTorch", "scikit-learn", "Postgres", "ChromaDB", "Grafana"]
+    },
+    {
+      "name": "Quant & research",
+      "keywords": ["Statistics", "Time-series modelling", "Bayesian inference", "Research writing", "LaTeX", "MATLAB", "Mathematica"]
+    },
+    {
+      "name": "Physics",
+      "keywords": ["Theoretical physics", "General relativity", "Black holes", "Naked singularities", "Gravitational waves"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Stack Advisor: Build-vs-Buy Calculator for AI",
+      "description": "Describe what you want AI to do, and it compares five ways to get there (buy a SaaS tool, build on hosted LLM APIs, run an open model on your own GPUs, mix the two, or pay per token for a hosted open model) on monthly cost, 36-month total cost of ownership, break-even volume, and ROI. Every assumption is shown, and 300 simulations report how often each option wins. It runs entirely in the browser.",
+      "keywords": ["JavaScript", "Chart.js", "TCO & ROI", "Monte Carlo", "GitHub Actions"],
+      "url": "https://kaunteyacharya.com/ai-stack-advisor/",
+      "repository": "https://github.com/KaunteyAcharya/ai-stack-advisor",
+      "note": "https://kaunteyacharya.com/notes/ai-stack-advisor/",
+      "links": {
+        "live": "https://kaunteyacharya.com/ai-stack-advisor/",
+        "howItWorks": "https://kaunteyacharya.com/ai-stack-advisor/about.html"
+      },
+      "type": "application"
+    },
+    {
+      "name": "TickerBrief: Automated Equity Research Reports",
+      "description": "Type a ticker and get a full equity research report as an interactive web page and a PDF. An n8n workflow pulls prices, fundamentals, peers, SEC filings, and news in parallel; Python computes ratios, technical indicators, and sentiment; and a local LLM writes the narrative in three structured passes, with rule-based fallbacks.",
+      "keywords": ["n8n", "Python", "FastAPI", "Ollama", "yfinance", "SEC EDGAR"],
+      "url": "https://github.com/KaunteyAcharya/tickerbrief",
+      "repository": "https://github.com/KaunteyAcharya/tickerbrief",
+      "note": "https://kaunteyacharya.com/notes/tickerbrief/",
+      "type": "application"
+    },
+    {
+      "name": "Model Monitoring + Drift Alert Agent",
+      "description": "A local MLOps stack that watches a deployed model. An n8n workflow scores new traffic, logs predictions to Postgres, and measures data, prediction, and target drift with Evidently AI. When a threshold is crossed, a local LLM explains the likely root cause in plain English and posts it to Slack, with a Grafana dashboard for the history.",
+      "keywords": ["MLOps", "n8n", "Evidently AI", "Ollama", "Postgres", "Grafana"],
+      "url": "https://github.com/KaunteyAcharya/ML-model-drift-alert-agent",
+      "repository": "https://github.com/KaunteyAcharya/ML-model-drift-alert-agent",
+      "note": "https://kaunteyacharya.com/notes/ml-drift-alert-agent/",
+      "type": "application"
+    },
+    {
+      "name": "ArXiv Research Analysis Agent",
+      "description": "Monitors arXiv every morning (gr-qc and q-fin by default), filters new papers by keyword, and sends a Telegram brief with a yes/no prompt. On “yes” it downloads the PDF, has a local LLM walk through the paper from first principles, and returns a Markdown report.",
+      "keywords": ["n8n", "Ollama", "ChromaDB", "Telegram Bot API"],
+      "url": "https://github.com/KaunteyAcharya/n8n-arxiv-research-automation",
+      "repository": "https://github.com/KaunteyAcharya/n8n-arxiv-research-automation",
+      "note": "https://kaunteyacharya.com/notes/automating-arxiv/",
+      "type": "application"
+    },
+    {
+      "name": "Local RAG Document Q&A Agent",
+      "description": "A fully local retrieval-augmented generation pipeline. Upload a PDF, TXT, DOCX, or MD file; it is chunked, embedded with nomic-embed-text, and stored in ChromaDB, and questions are answered by llama3.2 under a strict answer-only-from-context prompt. No cloud APIs, and no data leaves the machine.",
+      "keywords": ["RAG", "n8n", "Ollama", "ChromaDB", "Docker"],
+      "url": "https://github.com/KaunteyAcharya/RAG-doc-qa-agent",
+      "repository": "https://github.com/KaunteyAcharya/RAG-doc-qa-agent",
+      "note": "https://kaunteyacharya.com/notes/local-rag-agent/",
+      "type": "application"
+    },
+    {
+      "name": "Banking & Financial Stock Analysis",
+      "description": "Quantitative analysis of banking stocks: returns, volatility, correlations, and risk metrics.",
+      "keywords": ["Python", "yfinance", "Pandas", "Quant"],
+      "url": "https://github.com/KaunteyAcharya/yfinance-banking-stock-analysis",
+      "repository": "https://github.com/KaunteyAcharya/yfinance-banking-stock-analysis",
+      "type": "analysis"
+    },
+    {
+      "name": "Gravitational-Wave Tests of GR (ppE formalism)",
+      "description": "Bayesian parameter estimation pipelines that test for deviations from General Relativity in gravitational-wave observations, using the parametrized post-Einsteinian (ppE) framework.",
+      "keywords": ["Parameter estimation", "Bayesian inference", "Python", "Gravitational waves"],
+      "url": "https://github.com/KaunteyAcharya/GW-GR-Test-ppe-formalism",
+      "repository": "https://github.com/KaunteyAcharya/GW-GR-Test-ppe-formalism",
+      "type": "research"
+    },
+    {
+      "name": "Credit Score Data Analysis",
+      "description": "EDA of credit datasets focused on default risk, class imbalance, correlations, and interpretability.",
+      "keywords": ["EDA", "Pandas", "Risk"],
+      "url": "https://github.com/KaunteyAcharya/Credit-Score-Data-Analysis",
+      "repository": "https://github.com/KaunteyAcharya/Credit-Score-Data-Analysis",
+      "type": "analysis"
+    },
+    {
+      "name": "Indian Startup Investment EDA",
+      "description": "Exploratory analysis of Indian startup funding trends, sectors, and investor activity.",
+      "keywords": ["EDA", "Pandas", "Visualisation"],
+      "url": "https://github.com/KaunteyAcharya/start-ups-data-analysis",
+      "repository": "https://github.com/KaunteyAcharya/start-ups-data-analysis",
+      "type": "analysis"
+    }
+  ],
+  "publications": [
+    {
+      "name": "JMN-1 singularity in weak magnetic field",
+      "authors": ["M. Azreg-Ainou", "K. Acharya", "P. S. Joshi"],
+      "publisher": "European Physical Journal C",
+      "venue": "Eur. Phys. J. C 84, 535",
+      "releaseDate": "2024",
+      "doi": "10.1140/epjc/s10052-024-12905-4",
+      "url": "https://doi.org/10.1140/epjc/s10052-024-12905-4"
+    },
+    {
+      "name": "High energy particle collision in vicinity of naked singularity",
+      "authors": ["K. Acharya", "P. Bambhaniya", "P. S. Joshi", "K. Pandey", "V. Patel"],
+      "publisher": "Physics of the Dark Universe",
+      "venue": "Phys. Dark Univ. Vol. 50, 102101",
+      "releaseDate": "2025",
+      "doi": "10.1016/j.dark.2025.102101",
+      "url": "https://doi.org/10.1016/j.dark.2025.102101"
+    },
+    {
+      "name": "Energy extraction from Janis-Newman-Winicour naked singularity",
+      "authors": ["V. Patel", "K. Acharya", "P. Bambhaniya", "P. S. Joshi"],
+      "publisher": "Physical Review D",
+      "venue": "Phys. Rev. D 107, 064036",
+      "releaseDate": "2023",
+      "doi": "10.1103/PhysRevD.107.064036",
+      "url": "https://doi.org/10.1103/PhysRevD.107.064036"
+    },
+    {
+      "name": "Rotational energy extraction from Kerr black hole’s mimickers",
+      "authors": ["V. Patel", "K. Acharya", "P. Bambhaniya", "P. S. Joshi"],
+      "publisher": "Universe",
+      "venue": "Universe 2022, 8(11), 571",
+      "releaseDate": "2022",
+      "doi": "10.3390/universe8110571",
+      "url": "https://doi.org/10.3390/universe8110571"
+    }
+  ],
+  "services": [
+    {
+      "name": "AI opportunity and build-vs-buy review",
+      "description": "Find the workflows where AI saves real time or money, then compare buying a tool, building on APIs, and running your own model on cost, privacy, and time to launch.",
+      "evidence": [
+        { "name": "AI Stack Advisor", "url": "https://kaunteyacharya.com/ai-stack-advisor/" }
+      ]
+    },
+    {
+      "name": "Agentic workflows and automation",
+      "description": "n8n and Python workflows that connect your tools and APIs, use an LLM where it helps, and keep a human approval step where it matters.",
+      "evidence": [
+        { "name": "TickerBrief", "url": "https://kaunteyacharya.com/notes/tickerbrief/" },
+        { "name": "arXiv research agent", "url": "https://kaunteyacharya.com/notes/automating-arxiv/" }
+      ]
+    },
+    {
+      "name": "RAG and document Q&A",
+      "description": "Assistants that answer from your own documents and say so when the answer is not there, including fully local setups where no data leaves your machines.",
+      "evidence": [
+        { "name": "Local RAG agent", "url": "https://kaunteyacharya.com/notes/local-rag-agent/" }
+      ]
+    },
+    {
+      "name": "LLM evaluation and model monitoring",
+      "description": "Testing LLM behaviour, retrieval quality, and workflow reliability before launch, and monitoring models after it, so problems show up before your users notice them.",
+      "evidence": [
+        { "name": "Drift alert agent", "url": "https://kaunteyacharya.com/notes/ml-drift-alert-agent/" }
+      ]
+    }
+  ],
+  "engagementProcess": [
+    { "step": "Intro call", "description": "Your problem, your data, and your constraints." },
+    { "step": "Scope", "description": "One workflow, a clear measure of success, and a plan." },
+    { "step": "Working prototype", "description": "Built on your real data and tested against that measure." },
+    { "step": "Handover", "description": "Code and documentation your team can run and extend." }
+  ],
+  "notes": [
+    { "title": "Building AI Stack Advisor, a build-vs-buy calculator for AI", "date": "2026-10-21", "tags": ["AI", "projects"], "url": "https://kaunteyacharya.com/notes/ai-stack-advisor/", "summary": "Should a business buy a SaaS tool, build on APIs, or run its own model? A free browser tool that answers with costs, TCO, break-even, and ROI." },
+    { "title": "Building TickerBrief, an equity research agent", "date": "2026-10-01", "tags": ["AI", "projects"], "url": "https://kaunteyacharya.com/notes/tickerbrief/", "summary": "Type a ticker, get a full equity research report with charts, filings, news sentiment, and an LLM-written narrative. All local and free." },
+    { "title": "Building a model drift alert agent", "date": "2026-09-29", "tags": ["AI", "projects"], "url": "https://kaunteyacharya.com/notes/ml-drift-alert-agent/", "summary": "A local MLOps stack that notices when a model starts going wrong and explains why, in plain English, on Slack." },
+    { "title": "Building a fully local RAG agent", "date": "2026-09-22", "tags": ["AI", "projects"], "url": "https://kaunteyacharya.com/notes/local-rag-agent/", "summary": "Asking questions about my own documents with n8n, Ollama, and ChromaDB, with nothing leaving my machine." },
+    { "title": "What is RAG, and why does it matter so much?", "date": "2026-08-24", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/what-is-rag/", "summary": "Retrieval-augmented generation lets an AI answer from your own documents instead of its memory. Here is how it works, why it has become so important, and where it goes wrong." },
+    { "title": "Creating FocusPulse", "date": "2026-08-17", "tags": ["projects"], "url": "https://kaunteyacharya.com/notes/creating-focuspulse/", "summary": "A Chrome extension where you track your own focus in four colours. Ideas to make it more addictive are welcome." },
+    { "title": "How AI benchmarks are actually designed, from first principles", "date": "2026-07-25", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/ai-benchmarks/", "summary": "Benchmarks look like simple tables of percentages. Underneath, each one is a measuring instrument with design choices about tasks, scoring, statistics, and leakage. Here is how they work." },
+    { "title": "Creating EasyAutoFill", "date": "2026-07-20", "tags": ["projects"], "url": "https://kaunteyacharya.com/notes/creating-easyautofill/", "summary": "A local, open-source browser extension that fills any form from your own profile file." },
+    { "title": "Starting a statistics series on Medium", "date": "2026-06-24", "tags": ["maths"], "url": "https://kaunteyacharya.com/notes/stats-with-first-principles/", "summary": "Stats_with_FirstPrinciples: rebuilding statistical thinking from the ground up, one intuitive post at a time." },
+    { "title": "Automating my morning arXiv routine", "date": "2026-06-02", "tags": ["AI", "projects"], "url": "https://kaunteyacharya.com/notes/automating-arxiv/", "summary": "Checking arXiv every day and feeding papers to an LLM ate my mornings, so I built an n8n agent to do it." },
+    { "title": "How machine learning and deep learning are different", "date": "2025-03-05", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/ml-vs-deep-learning/", "summary": "Not \"deep learning is ML with neural networks,\" but why. A first-principles look at what each one is really doing, and why the difference comes down to who builds the representation." },
+    { "title": "How AI labs actually train their models", "date": "2025-01-26", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/how-labs-train-ai-models/", "summary": "From raw web text to a helpful assistant: the stages every big lab goes through, and how OpenAI, Anthropic, Google, Meta, and DeepSeek each do it differently." },
+    { "title": "Karpathy in 2017: “Gradient descent can write better code than you”", "date": "2025-01-08", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/gradient-descent-better-code/", "summary": "In 2017, Andrej Karpathy joked that gradient descent writes better code than us. Seven years later, it doesn't feel like much of a joke." },
+    { "title": "How Claude overtook GPT (where it matters)", "date": "2024-12-05", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/claude-overtook-gpt/", "summary": "ChatGPT is still the household name, but in coding and enterprise use, Anthropic's Claude has caught up and pulled ahead this year. Here is how that happened." },
+    { "title": "The maths and physics hiding inside LLMs", "date": "2024-10-14", "tags": ["AI", "maths"], "url": "https://kaunteyacharya.com/notes/maths-physics-inside-llms/", "summary": "Like many others, I was surprised the physics Nobel went to Geoffrey Hinton. So I went looking for the physics and maths inside large language models." },
+    { "title": "My quickest paper, and an unexpected collaboration", "date": "2023-10-12", "tags": ["physics"], "url": "https://kaunteyacharya.com/notes/jmn-magnetic-field/", "summary": "How a comment in a research meeting turned into a paper with Mustapha Azreg-Aïnou in about six weeks." },
+    { "title": "GPT: the model that started it all", "date": "2023-03-29", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/gpt-origins/", "summary": "With GPT-4 out, I went back to where the GPT series began. The surprising part is how simple the core idea is, and how far scaling it went." },
+    { "title": "ChatGPT: the interface that changed everything", "date": "2022-12-14", "tags": ["AI"], "url": "https://kaunteyacharya.com/notes/chatgpt-interface/", "summary": "ChatGPT is two weeks old and everyone around me is talking to it. The model behind it is not brand new. The way we get to use it is." },
+    { "title": "Where machine learning meets black hole energy extraction", "date": "2022-10-19", "tags": ["physics", "AI"], "url": "https://kaunteyacharya.com/notes/ml-black-hole-energy-extraction/", "summary": "Machine learning doesn't calculate the Penrose process for us, but it is quietly becoming essential to everything around it." },
+    { "title": "My first paper: stealing energy from spinning black holes", "date": "2022-06-02", "tags": ["physics"], "url": "https://kaunteyacharya.com/notes/first-paper-penrose/", "summary": "The Penrose process in plain words, and what my first paper asked about black hole look-alikes." },
+    { "title": "My MSc thesis: following light and matter around black holes", "date": "2022-04-21", "tags": ["physics"], "url": "https://kaunteyacharya.com/notes/msc-thesis/", "summary": "Five months of learning how light and particles move around black holes, naked singularities, and wormholes." }
+  ],
+  "interests": [
+    { "name": "Research papers" },
+    { "name": "Chess" },
+    { "name": "Science fiction" },
+    { "name": "Neuroscience, cognitive science, and evolutionary biology" }
+  ],
+  "meta": {
+    "canonical": "https://kaunteyacharya.com/resume.json",
+    "version": "1.0.0",
+    "lastModified": "2026-11-03",
+    "source": "Generated from https://kaunteyacharya.com/ (index.html and notes/posts.json)",
+    "consumers": ["kauntey-mcp (npm)"]
+  }
+}

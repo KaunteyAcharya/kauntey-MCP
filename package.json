@@ -1,0 +1,40 @@
+{
+  "name": "kauntey-mcp",
+  "version": "1.0.0",
+  "description": "Ask your AI about Kauntey Acharya. An MCP server that serves his live resume, projects, and papers to Claude Desktop, Cursor, and any MCP client.",
+  "keywords": ["mcp", "model-context-protocol", "resume", "portfolio", "claude", "cursor", "kauntey-acharya"],
+  "homepage": "https://kaunteyacharya.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaunteyAcharya/kauntey-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaunteyAcharya/kauntey-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Kauntey Acharya <kaunteyacharya2000@gmail.com> (https://kaunteyacharya.com/)",
+  "type": "module",
+  "bin": {
+    "kauntey-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/server.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.9.3"
+  }
+}
