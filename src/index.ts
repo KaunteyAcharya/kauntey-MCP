@@ -25,6 +25,12 @@ const server = new McpServer(
 
 const READ_ONLY = { readOnlyHint: true, openWorldHint: true, idempotentHint: true } as const;
 
+// Sections with a dedicated tool. Anything else in resume.json goes out through get_profile.
+const SECTIONS_WITH_TOOLS = new Set([
+  "$schema", "basics", "work", "education", "skills", "projects", "publications",
+  "services", "engagementProcess", "notes", "interests", "meta",
+]);
+
 type ToolResult = { content: { type: "text"; text: string }[]; isError?: boolean };
 
 /** Runs a tool body against the live resume, turning fetch failures into a clear tool error. */
@@ -44,24 +50,30 @@ server.registerTool(
   {
     title: "Profile",
     description:
-      "Who Kauntey Acharya is: name, headline, positioning line, bio, current role, location and time zone, and availability status.",
+      "Who Kauntey Acharya is: name, headline, positioning line, bio, current role, location and time zone, availability status and notice period, " +
+      "plus any other details and sections published in his resume.",
     annotations: READ_ONLY,
   },
   () =>
-    answer(({ basics = {}, work = [], interests = [] }) => {
+    answer((resume) => {
+      const { basics = {}, work = [], interests = [] } = resume;
+      const { name, label, positioning, summary, location, timezone, availability, url, profiles, image, email, contact, ...otherDetails } = basics;
       const current = work.find((w) => !w.endDate);
+      const otherSections = Object.entries(resume).filter(([key]) => !SECTIONS_WITH_TOOLS.has(key));
       return {
-        name: basics.name,
-        headline: basics.label,
-        positioning: basics.positioning,
-        summary: basics.summary,
+        name,
+        headline: label,
+        positioning,
+        summary,
         currentRole: current ? { position: current.position, organization: current.name, since: current.startDate } : null,
-        location: basics.location,
-        timezone: basics.timezone,
-        availability: basics.availability,
-        website: basics.url,
-        profiles: basics.profiles,
+        location,
+        timezone,
+        availability,
+        website: url,
+        profiles,
         interests: interests.map((i) => i.name),
+        ...otherDetails,
+        ...Object.fromEntries(otherSections),
       };
     }),
 );
@@ -70,10 +82,10 @@ server.registerTool(
   "get_experience",
   {
     title: "Work experience",
-    description: "Kauntey's work history, most recent first: organization, position, dates, summary, and highlights.",
+    description: "Kauntey's work history, most recent first (organization, position, dates, summary, highlights), and his education.",
     annotations: READ_ONLY,
   },
-  () => answer(({ work = [] }) => ({ experience: work })),
+  () => answer(({ work = [], education = [] }) => ({ experience: work, education })),
 );
 
 server.registerTool(
@@ -142,7 +154,7 @@ server.registerTool(
   {
     title: "Find relevant work",
     description:
-      "Search Kauntey's projects, notes, experience, papers, services, and skills for a topic, question, or pasted job description. " +
+      "Search Kauntey's projects, notes, experience, education, papers, services, and skills for a topic, question, or pasted job description. " +
       "Returns the matching items and which terms each matched, as evidence. It does not score or judge fit.",
     inputSchema: {
       topic: z

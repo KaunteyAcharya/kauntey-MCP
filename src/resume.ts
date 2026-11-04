@@ -28,7 +28,17 @@ export interface Resume {
     availability?: { status?: string; note?: string; interestedIn?: string[] };
     contact?: Record<string, string | null | undefined>;
     profiles?: { network?: string; username?: string; url?: string }[];
+    [extra: string]: unknown;
   };
+  education?: {
+    institution?: string;
+    area?: string;
+    studyType?: string;
+    startDate?: string;
+    endDate?: string;
+    url?: string;
+    summary?: string;
+  }[];
   work?: {
     name?: string;
     position?: string;
@@ -62,6 +72,8 @@ export interface Resume {
   notes?: { title?: string; date?: string; tags?: string[]; url?: string; summary?: string }[];
   interests?: { name?: string }[];
   meta?: Record<string, unknown>;
+  // Sections added to resume.json later, surfaced by get_profile without a republish.
+  [extra: string]: unknown;
 }
 
 export class ResumeUnavailableError extends Error {

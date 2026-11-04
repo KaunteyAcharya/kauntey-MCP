@@ -17,6 +17,7 @@
     "availability": {
       "status": "open",
       "note": "Open to new opportunities and research collaborations",
+      "noticePeriod": null,
       "interestedIn": ["AI roles", "agent builds", "research collaborations", "consulting projects"]
     },
     "contact": {
@@ -74,6 +75,7 @@
       ]
     }
   ],
+  "education": [],
   "skills": [
     {
       "name": "AI & agents",

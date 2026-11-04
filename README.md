@@ -46,13 +46,13 @@ You need Node.js 18 or newer. No API keys, no sign-up.
 
 | Tool | What it returns |
 | --- | --- |
-| `get_profile` | Who I am: headline, bio, current role, location and time zone, and availability |
-| `get_experience` | Work history with dates and highlights |
+| `get_profile` | Who I am: headline, bio, current role, location and time zone, availability, and notice period |
+| `get_experience` | Work history with dates and highlights, plus education |
 | `get_projects` | Projects with descriptions, tech used, and GitHub / demo / write-up links. Optional `technology` filter |
 | `get_publications` | My 4 peer-reviewed physics papers with authors, journal, year, and DOI |
 | `get_skills` | Skills grouped by area |
 | `get_services` | What I offer as an AI consultant, each linked to real work, plus how an engagement runs |
-| `find_relevant_work` | Takes a topic, a question, or a full job description and returns the matching projects, notes, experience, papers, and skills, with the terms each one matched |
+| `find_relevant_work` | Takes a topic, a question, or a full job description and returns the matching projects, notes, experience, education, papers, and skills, with the terms each one matched |
 | `get_contact` | Email, LinkedIn, GitHub, and a booking link when available |
 
 ## How it works

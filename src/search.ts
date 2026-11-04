@@ -101,6 +101,7 @@ export function findRelevantWork(resume: Resume, topic: string, limit = 5) {
     projects: rank(resume.projects, (p) => join(p.name, p.description, p.keywords, p.type), terms, limit),
     notes: rank(resume.notes, (n) => join(n.title, n.summary, n.tags), terms, limit),
     experience: rank(resume.work, (w) => join(w.position, w.name, w.summary, w.highlights), terms, limit),
+    education: rank(resume.education, (e) => join(e.institution, e.studyType, e.area, e.summary), terms, limit),
     publications: rank(resume.publications, (p) => join(p.name, p.publisher, p.venue), terms, limit),
     services: rank(resume.services, (s) => join(s.name, s.description), terms, limit),
   };

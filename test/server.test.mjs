@@ -111,6 +111,20 @@ test("find_relevant_work returns empty lists, not invented matches, for unrelate
   await close();
 });
 
+test("details added to resume.json later reach the tools without a code change", async () => {
+  const { client, close } = await connect("extended");
+  const profile = parse(await client.callTool({ name: "get_profile", arguments: {} }));
+  assert.equal(profile.availability.noticePeriod, "30 days");
+  assert.equal(profile.workAuthorization, "India");
+  assert.equal(profile.certificates[0].name, "Example Certificate");
+  assert.equal(profile.source, "https://kaunteyacharya.com/resume.json");
+  const exp = parse(await client.callTool({ name: "get_experience", arguments: {} }));
+  assert.equal(exp.education[0].studyType, "MSc");
+  const found = parse(await client.callTool({ name: "find_relevant_work", arguments: { topic: "MSc physics" } }));
+  assert.equal(found.education[0].institution, "Example University");
+  await close();
+});
+
 test("unreachable resume.json gives a clear error pointing to the site", async () => {
   const { client, close } = await connect("down");
   const res = await client.callTool({ name: "get_profile", arguments: {} });
